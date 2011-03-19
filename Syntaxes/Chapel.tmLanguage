@@ -29,13 +29,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(real|int|uint|complex)\b</string>
+			<string>\b(real|int|uint|complex|dmap|domain)\b</string>
 			<key>name</key>
 			<string>storage.type.chapel</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(config|const|param|sparse|single|type|enum|domain)\b</string>
+			<string>\b(config|const|param|sparse|single|type|enum)\b</string>
 			<key>name</key>
 			<string>storage.modifier.chapel</string>
 		</dict>
@@ -53,7 +53,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(this|super|these|here)\b</string>
+			<string>\b(this|super|these|here|Locales|LocaleSpace|numLocales|locale)\b</string>
 			<key>name</key>
 			<string>variable.language.chapel</string>
 		</dict>
