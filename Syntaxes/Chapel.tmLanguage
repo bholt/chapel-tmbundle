@@ -23,13 +23,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(atomic|begin|break|by|class|cobegin|coforall|continue|def|delete|dmapped|do|else|for|forall|if|in|label|lambda|let|module|new|on|otherwise|reduce|return|scan|select|serial|then|use|var|when|where|while|yield)\b</string>
+			<string>\b(atomic|begin|break|by|class|cobegin|coforall|continue|do|def|delete|dmapped|do|else|enum|for|forall|if|in|inout|label|lambda|let|module|new|on|otherwise|out|proc|record|reduce|return|scan|select|serial|then|use|var|when|where|while|yield)\b</string>
 			<key>name</key>
 			<string>keyword.control.chapel</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(real|int|uint|complex|dmap|domain)\b</string>
+			<string>\b(bool|real|int|uint|imag|complex|dmap|domain|string|range|tuple)\b</string>
 			<key>name</key>
 			<string>storage.type.chapel</string>
 		</dict>
@@ -53,7 +53,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(this|super|these|here|Locales|LocaleSpace|numLocales|locale)\b</string>
+			<string>\b(this|super|these|here|Locales|LocaleSpace|numLocales|locale|FileAccessMode)\b</string>
 			<key>name</key>
 			<string>variable.language.chapel</string>
 		</dict>
@@ -126,7 +126,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\+|\-|\*|\*\*|/|//|%|&lt;&lt;|&gt;&gt;|&amp;|\||\^|~|&lt;\=&gt;</string>
+			<string>\+|\-|\*|\*\*|/|//|%|&lt;&lt;|&gt;&gt;|&amp;|\||\^|~|&lt;\=&gt;\\.\.\.</string>
 			<key>name</key>
 			<string>keyword.operator.arithmetic.chapel</string>
 		</dict>
@@ -258,7 +258,9 @@
 		<dict>
 			<key>match</key>
 			<string>(?x)\b(
-                abs|max|min|sqrt|writeln
+              	abs | max | min | sqrt | write | writeln | read | readln | open | close | 
+				exit
+			
 			)\b</string>
 			<key>name</key>
 			<string>support.function.builtin.chapel</string>
@@ -366,7 +368,7 @@
 		<key>illegal_names</key>
 		<dict>
 			<key>match</key>
-			<string>\b(and|as|assert|break|class|continue|def|del|elif|else|except|exec|finally|for|from|global|if|import|in|is|lambda|not|or|pass|print|raise|return|try|while|with|yield)\b</string>
+			<string>\b(and|as|assert|break|class|continue|def|del|elif|else|except|exec|finally|for|from|global|if|import|in|is|lambda|not|or|pass|print|raise|record|return|try|while|with|yield)\b</string>
 			<key>name</key>
 			<string>invalid.illegal.name.python</string>
 		</dict>
