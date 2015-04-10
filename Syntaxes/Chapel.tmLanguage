@@ -23,7 +23,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(atomic|begin|break|by|class|cobegin|coforall|continue|do|def|delete|dmapped|do|else|enum|for|forall|if|in|inout|label|lambda|let|module|new|on|otherwise|out|proc|record|reduce|return|scan|select|serial|then|use|var|when|where|while|yield)\b</string>
+			<string>\b(align|atomic|begin|break|by|class|cobegin|coforall|continue|delete|dmapped|do|else|enum|export|extern|for|forall|if|index|inline|iter|label|lambda|let|local|module|new|noinit|on|otherwise|pragma|proc|record|reduce|return|scan|select|serial|then|union|use|var|when|where|while|with|yield|zip)\b</string>
 			<key>name</key>
 			<string>keyword.control.chapel</string>
 		</dict>
