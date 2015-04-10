@@ -134,7 +134,7 @@
 			<key>match</key>
 			<string>\=</string>
 			<key>name</key>
-			<string>keyword.operator.assignment.python</string>
+			<string>keyword.operator.assignment.chapel</string>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -150,7 +150,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>^\s*(def)\s+(?=[A-Za-z_][A-Za-z0-9_]*)</string>
+			<string>^\s*(proc)\s+(?=[A-Za-z_][A-Za-z0-9_]*)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -177,7 +177,7 @@
 					<key>contentName</key>
 					<string>keyword.control.chapel</string>
 					<key>match</key>
-					<string>def</string>
+					<string>proc</string>
 				</dict>
 				<dict>
 					<key>begin</key>
@@ -238,7 +238,7 @@
 						</dict>
 					</dict>
 					<key>contentName</key>
-					<string>meta.function-call.arguments.python</string>
+					<string>meta.function-call.arguments.chapel</string>
 					<key>end</key>
 					<string>(?=\))</string>
 					<key>patterns</key>
@@ -368,9 +368,9 @@
 		<key>illegal_names</key>
 		<dict>
 			<key>match</key>
-			<string>\b(and|as|assert|break|class|continue|def|del|elif|else|except|exec|finally|for|from|global|if|import|in|is|lambda|not|or|pass|print|raise|record|return|try|while|with|yield)\b</string>
+			<string>\b(align|atomic|begin|break|by|class|cobegin|coforall|continue|delete|dmapped|do|else|enum|export|extern|for|forall|if|index|inline|iter|label|lambda|let|local|module|new|noinit|on|otherwise|pragma|proc|record|reduce|return|scan|select|serial|then|union|use|var|when|where|while|with|yield|zip)\b</string>
 			<key>name</key>
-			<string>invalid.illegal.name.python</string>
+			<string>invalid.illegal.name.chapel</string>
 		</dict>
 	</dict>
 	<key>scopeName</key>
